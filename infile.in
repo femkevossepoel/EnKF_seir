@@ -12,17 +12,17 @@
  10.0                     ! Decorrelation half length in time of measurement errors
  0.99                     ! EnKF SVD truncation (around 0.99)
 #2 Dates ----------------------------------------------------------------------------------------------
- 24/01-2020               ! Start date of simulation
- 16/03-2020               ! Start date of first  phase of intervations
- 11/05-2020               ! Start date of second phase of intervations
+ 06/02-2020               ! Start date of simulation
+ 16/03-2021               ! Start date of first  phase of intervations
+ 11/05-2021               ! Start date of second phase of intervations
 #3 First guess model parameters and their std dev -----------------------------------------------------
  T                        !  Rescaling of Rmatrix                                                                 
  T            14.0         !  lrtime   + rch : R time-continous (T) or picewise constant (F) + decorrelation length
- 2.2          0.5         !  R1        : Reproduction number with no interventions 
+ 1.0          1.0         !  R1        : Reproduction number with no interventions 
  0.80         0.10        !  R2        : Reproduction number during lockdown
  0.90         0.10        !  R3        : Reproduction number during opening
- 400.0       300.0         !  E0        : Initial Exposed used to initialize the model
- 200.0       150.0       !  I0        : Initial Infectious used to initialize the model
+ 800.0       200.0         !  E0        : Initial Exposed used to initialize the model
+ 400.0       100.0       !  I0        : Initial Infectious used to initialize the model
  5.5          0.5         !  Tinc      : Incubation period 
  3.8          0.5         !  Tinf      : Infection time                 |
  14.0         1.0         !  Trecm     : Recovery time mild cases
